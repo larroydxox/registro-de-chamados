@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Chamados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Chamados</h1>
+        <div class="form-container">
+            <form id="chamadoForm">
+                <label for="mes"><b>Mês:</b></label>
+                <select id="mes" name="mes" required class="mes-label">
+                    <option value="JAN"><b>JAN</b></option>
+                    <option value="FEV"><b>FEV</b></option>
+                    <option value="MAR"><b>MAR</b></option>
+                    <option value="ABR"><b>ABR</b></option>
+                    <option value="MAI"><b>MAI</b></option>
+                    <option value="JUN"><b>JUN</b></option>
+                    <option value="JUL"><b>JUL</b></option>
+                    <option value="AGO"><b>AGO</b></option>
+                    <option value="SET"><b>SET</b></option>
+                    <option value="OUT"><b>OUT</b></option>
+                    <option value="NOV"><b>NOV</b></option>
+                    <option value="DEZ"><b>DEZ</b></option>
+                </select>
+                <label for="recebidos"><b>Chamados Recebidos:</b></label>
+                <input type="number" id="recebidos" name="recebidos" required>
+                <label for="atendidos"><b>Chamados Atendidos:</b>   </label>
+                <input type="number" id="atendidos" name="atendidos" required>
+                <button type="submit"><b>Registrar</b></button>
+            </form>
+        </div>
+        
+        <h2 class="chamados-quadro">Quadro de Chamados</h2>
+        <table id="chamadosTable">
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Chamados Recebidos</th>
+                    <th>Chamados Atendidos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- dados aq -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

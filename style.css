@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D7D7D9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #D95829;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #D7D7D9;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #0D0D0D;
+}
+
+.chamados-quadro {
+    color: #D7D7D9;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+label, input, select, button {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #591812;
+    background-color: #BF4124;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.mes-label {
+    width: 20%;
+}
+
+button {
+    background-color: #5cb85c;
+    color: #D7D7D9;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #D7D7D9;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #e9ecef;
+    color: #0D0D0D;
+}
+
+th {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
