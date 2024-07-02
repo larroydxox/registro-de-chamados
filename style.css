@@ -22,7 +22,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    color: #D7D7D9;
+    color: #ffff;
 }
 
 .form-container {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .chamados-quadro {
-    color: #D7D7D9;
+    color: #ffff;
 }
 form {
     display: flex;
@@ -59,7 +59,7 @@ label, input, select, button {
 
 button {
     background-color: #5cb85c;
-    color: #D7D7D9;
+    color: #ffff;
     border: none;
     cursor: pointer;
 }
