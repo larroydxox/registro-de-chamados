@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +10,39 @@
     <div class="container">
         <h1>Registro de Chamados</h1>
         <div class="form-container">
-            <form id="chamadoForm">
-                <label for="mes"><b>Mês:</b></label>
-                <select id="mes" name="mes" required class="mes-label">
-                    <option value="JAN"><b>JAN</b></option>
-                    <option value="FEV"><b>FEV</b></option>
-                    <option value="MAR"><b>MAR</b></option>
-                    <option value="ABR"><b>ABR</b></option>
-                    <option value="MAI"><b>MAI</b></option>
-                    <option value="JUN"><b>JUN</b></option>
-                    <option value="JUL"><b>JUL</b></option>
-                    <option value="AGO"><b>AGO</b></option>
-                    <option value="SET"><b>SET</b></option>
-                    <option value="OUT"><b>OUT</b></option>
-                    <option value="NOV"><b>NOV</b></option>
-                    <option value="DEZ"><b>DEZ</b></option>
-                </select>
-                <label for="recebidos"><b>Chamados Recebidos:</b></label>
-                <input type="number" id="recebidos" name="recebidos" required>
-                <label for="atendidos"><b>Chamados Atendidos:</b>   </label>
-                <input type="number" id="atendidos" name="atendidos" required>
-                <button type="submit"><b>Registrar</b></button>
+            <form id="registro-form">
+                <label for="mes">Mês (1 a 12):</label>
+                <input type="number" id="mes" min="1" max="12" required>
+                <label for="recebidos">Chamados Recebidos:</label>
+                <input type="number" id="recebidos" required>
+                <label for="atendidos">Chamados Atendidos:</label>
+                <input type="number" id="atendidos" required>
+                <button type="submit">Registrar</button>
             </form>
         </div>
-        
-        <h2 class="chamados-quadro">Quadro de Chamados</h2>
-        <table id="chamadosTable">
-            <thead>
-                <tr>
-                    <th>Mês</th>
-                    <th>Chamados Recebidos</th>
-                    <th>Chamados Atendidos</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- dados aq -->
-            </tbody>
-        </table>
+        <div class="form-container">
+            <form id="exibir-form">
+                <label for="exibir-mes">Exibir Dados:</label>
+                <select id="exibir-mes">
+                    <option value="0">Todos os meses</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <button type="submit">Exibir</button>
+            </form>
+        </div>
+        <div id="dados-container"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
